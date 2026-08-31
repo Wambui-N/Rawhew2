@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rawhew Ranch — bohemian-luxury redesign concept
 
-## Getting Started
+A design-direction prototype for [rawhewranch-kenya.com](https://rawhewranch-kenya.com).
+Next.js (App Router) + Tailwind v4 + Framer Motion. All body copy is pulled
+**verbatim** from the current site — this rebuild is visual only.
 
-First, run the development server:
+## Run it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`npm run build` produces a fully static export of both routes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Route   | Contents                                                                 |
+| ------- | ----------------------------------------------------------------------- |
+| `/`     | Hero · Welcome to Naivasha · Welcome to Rawhew Ranch · Amenities · Activities |
+| `/menu` | Prices (tariff card) · Terms & Conditions · Our Restaurant · Our Menu   |
 
-## Learn More
+The current site keeps a separate "Menu" page (page 2: the restaurant food
+menu) and lists "Prices" on page 1. Both are consolidated onto `/menu` here so
+the nav's single **Menu** link covers everything price/menu related.
 
-To learn more about Next.js, take a look at the following resources:
+## Decisions worth flagging for the client
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Typography** — per the brief, no new webfonts were added. Body uses the
+  system sans stack; editorial headings use the system serif stack
+  (Georgia/Cambria/Times). Swap in the real brand faces when available.
+- **Imagery** — every image is a labelled placeholder at the intended aspect
+  ratio (subject + ratio printed on each block). Drop real photography into
+  `components/placeholder.tsx` / the hero background with no layout change.
+- **Icons** — the amenity/activity line icons in `components/icons.tsx` are a
+  placeholder stroke set to prove the motif; a bespoke family can replace them.
+- **shadcn/ui** — not pulled in. The only interactive pieces (nav scroll state,
+  tariff layout) were lighter hand-rolled; add shadcn later if the component
+  surface grows.
+- **Colour** — earth-tone tokens live in `app/globals.css` (`@theme`). Tuned by
+  eye against placeholders; expect a pass once real photos land.
+- **Motion** — scroll-reveals via Framer Motion `whileInView`, light parallax on
+  the hero only. Fully disabled under `prefers-reduced-motion`.
+# Rawhew2
