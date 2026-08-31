@@ -1,26 +1,132 @@
 @import "tailwindcss";
 
+/*
+  Rawhew Ranch — bohemian-luxury redesign concept
+  Typography rule: no new webfonts. Everything below uses system font stacks
+  (system sans for body, system serif for editorial headings).
+*/
+
+@theme {
+  --color-cream: #f7efe1;
+  --color-cream-deep: #efe3cf;
+  --color-sand: #e4d3b8;
+  --color-sand-deep: #d6bf9a;
+  --color-clay: #c07a4e;
+  --color-rust: #9b4a24;
+  --color-rust-deep: #7c3a1c;
+  --color-olive: #55603c;
+  --color-olive-deep: #3f4a2c;
+  --color-forest: #2c3623;
+  --color-ink: #2b2018;
+  --color-ink-soft: #4a3f34;
+  --color-brass: #a9823f;
+  --color-brass-light: #c9a86a;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  /* Brand display face (logo wordmark), with system-serif fallback */
+  --font-display: var(--font-foglihten), ui-serif, Georgia, Cambria,
+    "Times New Roman", Times, serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --paper-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  * {
+    border-color: color-mix(in srgb, var(--color-brass) 40%, transparent);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Editorial headings — colour left to utilities so dark panels can override */
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: 0.005em;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Paper / linen grain behind light sections — avoids flat white */
+  .paper {
+    background-color: var(--color-cream);
+    background-image: var(--paper-noise);
+    background-blend-mode: multiply;
+    background-size: 140px 140px;
+  }
+
+  .paper-sand {
+    background-color: var(--color-sand);
+    background-image: var(--paper-noise);
+    background-blend-mode: multiply;
+    background-size: 140px 140px;
+  }
+
+  .paper-olive {
+    background-color: var(--color-olive-deep);
+    background-image: var(--paper-noise);
+    background-blend-mode: soft-light;
+    background-size: 140px 140px;
+  }
+
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  /* Thin brass rule motif */
+  .gold-rule {
+    height: 1px;
+    border: 0;
+    background: linear-gradient(
+      to right,
+      transparent,
+      color-mix(in srgb, var(--color-brass) 90%, transparent) 15%,
+      color-mix(in srgb, var(--color-brass) 90%, transparent) 85%,
+      transparent
+    );
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--color-rust);
+  }
+
+  /* Soft safari-lodge arch crop */
+  .arch {
+    border-radius: 46% 46% 8px 8px / 58% 58% 8px 8px;
+  }
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    color: var(--color-ink);
+  }
 }
