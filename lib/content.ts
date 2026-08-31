@@ -342,7 +342,7 @@ export const contact = {
   address: "7FH8+82X Kinamba, Naivasha",
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=7FH8%2B82X%20Kinamba%2C%20Naivasha",
-  facebook: "#",
-  instagram: "#",
+  facebook: "https://www.facebook.com/profile.php?id=61551199892850",
+  instagram: "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fatrawhewranch%3Ffbclid%3DIwcGRvZgVleHRuA2FlbQIxMABicmlkETFxNnJ4amJWNFNNa245a1c1c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHkmjLrun0XPo3KBB1dWf-nhl6Xqy3WTk4Z0nQv7fKrG_CG2NVGztcf_EzEc-_aem_lNTSmFiZptPpLI8vSmE5TA&h=AUCQNA7HVcPbDz6eiwTPCLl3fERMuvendlx_k0fi8s6PfSKHfmTp09qNpUrWm2xsFoeZHwr5LJnnDYrhHPSX1zE3o8gOk9ix9bdMbicGTT5zTmi7ZNDx0mHGxxcV95ThTIh-",
   copyright: "© 2024 Rawhew Ranch Kenya. All Rights Reserved.",
 };
