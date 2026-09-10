@@ -11,6 +11,8 @@ export const hero = {
   subtitle: "Introducing Naivasha's Cozy Camp",
   tagline: "The place to be",
   image: "/campingsite.jpg",
+  imageAlt:
+    "Campfire glowing beside a tent at night at Rawhew Ranch, overlooking the lights of Naivasha",
 };
 
 export const naivasha = {
@@ -18,8 +20,16 @@ export const naivasha = {
   heading: "Introducing Naivasha's Cozy Camp",
   body: `Naivasha is one of the most popular travel destinations in Kenya. It is beloved by visitors from all parts of Kenya and beyond due to its moderate climate and gorgeous scenery on the floor of the Great Rift Valley. At the core of it all is Lake Naivasha. This is one of the largest freshwater lakes in Africa which hosts a rich birdlife and supports large-scale horticulture that makes Kenya a leading flower exporter in the world. Surrounding the lake are unique geographical features such as Mt Longonot, Hell's Gate National Park, and private game sanctuaries, all attracting hundreds of outdoor enthusiasts every weekend. One cannot forget the numerous modern hotels, shopping malls, and restaurants catering to every taste, style, and budget. Naivasha is indeed “the place to be.”`,
   images: [
-    { src: "/cycling.jpg", alt: "Cycling", position: "center" },
-    { src: "/Boat Ridding.png", alt: "Boat Riding", position: "center" },
+    {
+      src: "/cycling.jpg",
+      alt: "Mountain bikes for hire on the lawn at Rawhew Ranch, ready for a ride along the KWS Game Farm",
+      position: "center",
+    },
+    {
+      src: "/Boat Ridding.png",
+      alt: "Traditional sailing boat at sunset on Lake Naivasha",
+      position: "center",
+    },
   ],
 };
 
@@ -28,13 +38,20 @@ export const welcome = {
   heading: "Welcome to Rawhew Ranch",
   body: `In the midst of these attractions and offerings, there is Rawhew Ranch. A small intimate campsite bordering KWS Game Farm, a few meters from off the Naivasha – Kinangop Road. We offer high-quality pitches with a wide variety of facilities to enrich your camping experience. Our location away from the urban jungle and the busy highway gives our camp an adventurous sense of solitude and freedom.`,
   pullQuote: `Cosily hidden from the crowds, yet so close to everything that is important`,
-  image: { src: "/HellsGate.png", alt: "Rawhew Ranch grounds", position: "center" },
+  image: {
+    src: "/HellsGate.png",
+    alt: "Horses and the wooden bar on the grounds at Rawhew Ranch, Naivasha",
+    position: "center",
+  },
 };
 
 export const amenities = {
   eyebrow: "Our Amenities",
   heading: "Our Amenities",
-  image: { src: "/Bonfire.png", alt: "Evening bonfire at the camp" },
+  image: {
+    src: "/Bonfire.png",
+    alt: "Guests gathered around an evening bonfire under the stars at Rawhew Ranch",
+  },
   items: [
     { label: "Free, secure, and ample parking", icon: "parking" },
     { label: "Clean and modern washrooms and showers", icon: "shower" },
@@ -71,7 +88,7 @@ export const activities = {
       eyebrow: "Activities",
       heading: "Camping",
       icon: "tent",
-      imageLabel: "Camping",
+      imageLabel: "Camping tents pitched on the manicured lawn at Rawhew Ranch, Naivasha",
       image: "/Camping.jpeg",
       position: "center 70%",
       size: "feature",
@@ -82,7 +99,7 @@ export const activities = {
       eyebrow: "Activities",
       heading: "Cycling",
       icon: "bike",
-      imageLabel: "Cycling",
+      imageLabel: "Mountain bikes for hire at Rawhew Ranch, bordering the KWS Game Farm",
       image: "/cycling.jpg",
       position: "center 65%",
       size: "feature",
@@ -93,7 +110,7 @@ export const activities = {
       eyebrow: "Activities",
       heading: "Horse Riding",
       icon: "horse",
-      imageLabel: "Horse Ridding",
+      imageLabel: "Horse riding at Rawhew Ranch, Naivasha",
       image: "/horse ridding.jpg",
       position: "center 40%",
       size: "feature",
@@ -104,7 +121,7 @@ export const activities = {
       eyebrow: "Activities",
       heading: "Goat Roasting (Nyama Choma)",
       icon: "flame",
-      imageLabel: "Nyama Choma",
+      imageLabel: "Charcoal-grilled nyama choma (goat meat) sizzling on the grill",
       image: "/nyama choma.jpg",
       position: "center",
       size: "feature",
@@ -115,7 +132,7 @@ export const activities = {
       eyebrow: "Activities",
       heading: "Boat Riding",
       icon: "canoe",
-      imageLabel: "Boat Ridding",
+      imageLabel: "Lake Naivasha shoreline with birdlife, seen from a Rawhew Ranch boat ride",
       image: "/Lake Naivasha.jpg",
       position: "center",
       size: "feature",
@@ -128,7 +145,7 @@ export const activities = {
       eyebrow: "Wedding",
       heading: "Weddings In Style",
       icon: "heart",
-      imageLabel: "Wedding",
+      imageLabel: "Floral arch set up for a wedding at Rawhew Ranch",
       image: "/wedding.jpg",
       position: "center",
       size: "compact",
@@ -139,7 +156,7 @@ export const activities = {
       eyebrow: "Team Building",
       heading: "Team Building and General Events",
       icon: "users",
-      imageLabel: "Team Building",
+      imageLabel: "Team building group activity at Rawhew Ranch",
       image: "/team building.jpg",
       position: "center",
       size: "compact",
@@ -150,7 +167,7 @@ export const activities = {
       eyebrow: "Activities",
       heading: "Nyandarua Farm Visits",
       icon: "sprout",
-      imageLabel: "Farm",
+      imageLabel: "Potato harvest on a Nyandarua farm near Rawhew Ranch",
       image: "/farm.jpg",
       position: "center",
       size: "compact",
@@ -173,7 +190,7 @@ export const activities = {
       eyebrow: "Outdoor Excursions",
       heading: "Longonot Hiking",
       icon: "mountain",
-      imageLabel: "Longonot",
+      imageLabel: "Aerial view of Mount Longonot's crater and caldera",
       image: "/longonot.jpg",
       position: "center",
       size: "feature",
@@ -184,7 +201,7 @@ export const activities = {
       eyebrow: "Outdoor Excursions",
       heading: "Eburu Forest",
       icon: "trees",
-      imageLabel: "Eburu",
+      imageLabel: "Misty forest trail in Eburu Forest near Lake Naivasha",
       image: "/eburu.jpg",
       position: "center",
       size: "feature",
@@ -195,7 +212,7 @@ export const activities = {
       eyebrow: "Outdoor Excursions",
       heading: "Hells Gate National Park",
       icon: "mountain",
-      imageLabel: "Hells Gate",
+      imageLabel: "Dramatic Rift Valley cliffs near Hell's Gate National Park",
       image: "/hellsgate trail.jpg",
       position: "center",
       size: "feature",
@@ -303,11 +320,17 @@ export const pricing: {
 export const restaurant = {
   eyebrow: "Our Restaurant",
   heading: "Our Restaurant",
-  imageLabel: "Restaurant Image",
+  imageLabel: "Candlelit dining terrace at the Rawhew Ranch restaurant at sunset",
   image: "/Restaurant.png",
   menuImages: [
-    { src: "/nyama choma.jpg", alt: "Charcoal grilled meat" },
-    { src: "/Mashed.png", alt: "Fresh fish with mashed potatoes" },
+    {
+      src: "/nyama choma.jpg",
+      alt: "Charcoal-grilled meat platter at the Rawhew Ranch restaurant",
+    },
+    {
+      src: "/Mashed.png",
+      alt: "Grilled fish served with mashed potatoes at the Rawhew Ranch restaurant",
+    },
   ],
   body: `At Rawhew Ranch , you can enjoy delicious cuisine at our Restaurant situated next to the campsite. Our main offering includes succulent pork from our farm, goat meat, Kienyeji chicken, and fresh fish from the lake. Our meats are charcoal grilled to your liking. Vegetables are all sourced from our farm, guaranteeing you quality and freshness to treasure.`,
   menuHeading: "Our Menu",
@@ -343,6 +366,6 @@ export const contact = {
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=7FH8%2B82X%20Kinamba%2C%20Naivasha",
   facebook: "https://www.facebook.com/profile.php?id=61551199892850",
-  instagram: "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fatrawhewranch%3Ffbclid%3DIwcGRvZgVleHRuA2FlbQIxMABicmlkETFxNnJ4amJWNFNNa245a1c1c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHkmjLrun0XPo3KBB1dWf-nhl6Xqy3WTk4Z0nQv7fKrG_CG2NVGztcf_EzEc-_aem_lNTSmFiZptPpLI8vSmE5TA&h=AUCQNA7HVcPbDz6eiwTPCLl3fERMuvendlx_k0fi8s6PfSKHfmTp09qNpUrWm2xsFoeZHwr5LJnnDYrhHPSX1zE3o8gOk9ix9bdMbicGTT5zTmi7ZNDx0mHGxxcV95ThTIh-",
+  instagram: "https://www.instagram.com/atrawhewranch",
   copyright: "© 2024 Rawhew Ranch Kenya. All Rights Reserved.",
 };

@@ -24,7 +24,7 @@ export function Hero() {
       <motion.div style={{ y }} className="absolute inset-0 -z-10 h-[125%] w-full">
         <Image
           src={hero.image}
-          alt="Hell's Gate landscape, Naivasha"
+          alt={hero.imageAlt}
           fill
           priority
           sizes="100vw"

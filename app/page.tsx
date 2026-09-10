@@ -6,10 +6,14 @@ import { AmenitiesSection } from "@/components/sections/amenities";
 import { ActivitiesSection } from "@/components/sections/activities";
 import { PricingSection } from "@/components/sections/pricing";
 import { Footer } from "@/components/footer";
+import { JsonLd } from "@/components/json-ld";
+import { buildBreadcrumbJsonLd, buildCampgroundJsonLd } from "@/lib/seo";
 
 export default function HomePage() {
   return (
     <>
+      <JsonLd data={buildCampgroundJsonLd()} />
+      <JsonLd data={buildBreadcrumbJsonLd([{ name: "Home", path: "/" }])} />
       <Nav overHero />
       <main className="flex-1">
         <Hero />
