@@ -1,12 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
 import { contact } from "@/lib/content";
+import { ContactForm } from "@/components/contact-form";
 import { Container, GoldRule } from "@/components/ui";
 
 export function Footer() {
   return (
     <footer className="paper-olive mt-auto text-cream/85">
       <Container className="py-16">
+        <div
+          id="contact"
+          className="mb-14 scroll-mt-24 rounded-[6px] border border-brass/30 bg-black/10 p-7 sm:p-9"
+        >
+          <p className="eyebrow mb-2 text-brass-light">Enquire</p>
+          <h2 className="mb-6 text-2xl text-cream sm:text-[1.7rem]">
+            Plan Your Stay
+          </h2>
+          <ContactForm />
+        </div>
+
         <div className="flex flex-col gap-10 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <div className="flex items-center gap-3">

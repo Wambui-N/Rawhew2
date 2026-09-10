@@ -17,6 +17,7 @@ export function Nav({ overHero = true }: { overHero?: boolean }) {
 
   const solid = scrolled;
   const ratesHref = overHero ? "#pricing" : "/#pricing";
+  const contactHref = overHero ? "#contact" : "/#contact";
 
   return (
     <header
@@ -67,13 +68,24 @@ export function Nav({ overHero = true }: { overHero?: boolean }) {
           <Link
             href="/menu"
             className={[
-              "group inline-flex items-center gap-2 text-[0.72rem] font-semibold uppercase tracking-[0.24em] transition-colors sm:text-[0.8rem]",
+              "text-[0.72rem] font-semibold uppercase tracking-[0.24em] transition-colors sm:text-[0.8rem]",
               solid
                 ? "text-ink-soft hover:text-rust"
                 : "text-cream/85 hover:text-cream drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)]",
             ].join(" ")}
           >
             Menu
+          </Link>
+          <Link
+            href={contactHref}
+            className={[
+              "group inline-flex items-center gap-2 text-[0.72rem] font-semibold uppercase tracking-[0.24em] transition-colors sm:text-[0.8rem]",
+              solid
+                ? "text-ink-soft hover:text-rust"
+                : "text-cream/85 hover:text-cream drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)]",
+            ].join(" ")}
+          >
+            Contact
             <span
               className="h-px w-5 bg-current transition-all duration-300 group-hover:w-8"
               aria-hidden

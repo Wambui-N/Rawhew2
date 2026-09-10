@@ -338,7 +338,7 @@ export const restaurant = {
 
 export const contact = {
   email: "rawhewranch@gmail.com",
-  phone: "+254742293741",
+  phone: "+254712137749",
   address: "7FH8+82X Kinamba, Naivasha",
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=7FH8%2B82X%20Kinamba%2C%20Naivasha",
