@@ -21,8 +21,8 @@ export const naivasha = {
   body: `Naivasha is one of the most popular travel destinations in Kenya. It is beloved by visitors from all parts of Kenya and beyond due to its moderate climate and gorgeous scenery on the floor of the Great Rift Valley. At the core of it all is Lake Naivasha. This is one of the largest freshwater lakes in Africa which hosts a rich birdlife and supports large-scale horticulture that makes Kenya a leading flower exporter in the world. Surrounding the lake are unique geographical features such as Mt Longonot, Hell's Gate National Park, and private game sanctuaries, all attracting hundreds of outdoor enthusiasts every weekend. One cannot forget the numerous modern hotels, shopping malls, and restaurants catering to every taste, style, and budget. Naivasha is indeed “the place to be.”`,
   images: [
     {
-      src: "/cycling.jpg",
-      alt: "Mountain bikes for hire on the lawn at Rawhew Ranch, ready for a ride along the KWS Game Farm",
+      src: "/horse ridding.jpg",
+      alt: "Horse riding at Rawhew Ranch, Naivasha",
       position: "center",
     },
     {
@@ -92,17 +92,6 @@ export const activities = {
       position: "center 70%",
       size: "feature",
       body: `Camping is our main activity. We have secure, private, and spacious grounds for camping. You bring your own tent and accessories such as a sleeping tent and mattress. You can also hire from the camp. The camp offers a kitchen, so you bring your own food and prepare it your way and at your convenience. We provide food and a cook with prior arrangements and at an extra cost. There is enough water and clean washrooms and showers`,
-    },
-    {
-      key: "cycling",
-      eyebrow: "Activities",
-      heading: "Cycling",
-      icon: "bike",
-      imageLabel: "Mountain bikes for hire at Rawhew Ranch, bordering the KWS Game Farm",
-      image: "/cycling.jpg",
-      position: "center 65%",
-      size: "feature",
-      body: `You can hire a bicycle from the camp and indulge in a cycling adventure. Our camp directly neighbours the KWS Game Farm which is dotted with rocky outcrops and natural vegetation such as Leleshwa and Euphorbia trees. There are also a variety of range animals such as impala, Eland, Zebras, and a variety of grassland birds. From our camp, you can cycle along the game farm at your pace and back to the camp. You can also take a bike to the highway and to Naivasha town.`,
     },
     {
       key: "horse-riding",

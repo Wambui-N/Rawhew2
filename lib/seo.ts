@@ -15,7 +15,7 @@ export const SITE_URL = "https://www.rawhewranch-kenya.com";
 export const SITE_NAME = "Rawhew Ranch";
 
 export const SITE_DESCRIPTION =
-  "Rawhew Ranch is a small, intimate campsite bordering the KWS Game Farm on the Naivasha – Kinangop Road, Kenya. Camp, cycle, ride horses, and boat on Lake Naivasha, or hike Mt Longonot, Eburu Forest, and Hell's Gate National Park — with a farm-to-fire restaurant next door.";
+  "Rawhew Ranch is a small, intimate campsite bordering the KWS Game Farm on the Naivasha – Kinangop Road, Kenya. Camp, ride horses, and boat on Lake Naivasha, or hike Mt Longonot, Eburu Forest, and Hell's Gate National Park — with a farm-to-fire restaurant next door.";
 
 export const KEYWORDS = [
   "Rawhew Ranch",
@@ -25,7 +25,6 @@ export const KEYWORDS = [
   "Hell's Gate National Park camping",
   "Lake Naivasha activities",
   "horse riding Naivasha",
-  "cycling Naivasha",
   "tent hire Naivasha",
   "cottage for hire Naivasha",
   "team building venue Naivasha",
