@@ -56,7 +56,6 @@ export const amenities = {
     { label: "Free, secure, and ample parking", icon: "parking" },
     { label: "Clean and modern washrooms and showers", icon: "shower" },
     { label: "Double & Single tents + mattresses for hire", icon: "tent" },
-    { label: "Bicycles for hire", icon: "bike" },
     { label: "Safe and clean grounds for camping with your own tent", icon: "leaf" },
     { label: "Cooking space and firewood at a small fee", icon: "fire" },
     { label: "Grill for hire", icon: "grill" },
@@ -256,12 +255,43 @@ export const pricing: {
       label: "Team Building",
       lines: [
         {
-          text: "Full board:",
-          note: "Ksh 6,500 per person inclusive of tents and grounds, breakfast, dinner, and lunch,10 am & 4.00 pm tea served with snacks.",
+          text: "Ksh 2,500 per person",
+          note: "Includes 10 o'clock tea and snacks, buffet lunch, water and soda plus facilitator.",
+        },
+      ],
+    },
+    {
+      label: "Rooms",
+      lines: [
+        {
+          text: "Double, full board:",
+          note: "Ksh 9,200",
         },
         {
-          text: "Day team building:",
-          note: "Ksh 1,500 per person inclusive of use of grounds, lunch, 10 am & 4 pm tea served with snacks and Lunch",
+          text: "Single, full board:",
+          note: "Ksh 5,600",
+        },
+        {
+          text: "Full board includes breakfast, 10 o'clock tea and snacks, lunch, 4 o'clock tea and snacks, dinner and horse ride.",
+        },
+        {
+          text: "Double, half board:",
+          note: "Ksh 7,200",
+        },
+        {
+          text: "Single, half board:",
+          note: "Ksh 4,300",
+        },
+        {
+          text: "Half board includes breakfast, 10 or 4 o'clock tea, lunch and horse ride.",
+        },
+        {
+          text: "Double, bed and breakfast:",
+          note: "Ksh 4,000",
+        },
+        {
+          text: "Single, bed and breakfast:",
+          note: "Ksh 3,000",
         },
       ],
     },
@@ -282,20 +312,33 @@ export const pricing: {
       lines: [{ text: "Stays 5 people in 2 bedrooms,", note: "Ksh. 40,000 per night" }],
     },
     {
-      label: "Children's Playground",
-      lines: [{ text: "Ksh 300 per child. Free for resident campers" }],
+      label: "Wedding Ground",
+      lines: [
+        {
+          text: "Ksh 60,000 for hire,",
+          note: "includes ground, kitchen, toilets, water and electricity",
+        },
+      ],
     },
     {
-      label: "Guided Cycling",
-      lines: [{ text: "Ksh 300 per person" }],
+      label: "Hall",
+      lines: [{ text: "Ksh 20,000 for hire" }],
     },
     {
-      label: "Cycling",
-      lines: [{ text: "Ksh 400 per hour" }],
+      label: "Kids Corner",
+      lines: [
+        {
+          text: "Ksh 300 for the whole day,",
+          note: "bouncing castle, slides and trampoline",
+        },
+      ],
     },
     {
       label: "Horse Riding",
-      lines: [{ text: "Ksh 3,000 per hour" }],
+      lines: [
+        { text: "Around the hotel compound:", note: "Ksh 500 adults, Ksh 250 kids" },
+        { text: "To the KWS area:", note: "Ksh 3,000 adults, Ksh 2,000 kids" },
+      ],
     },
     {
       label: "Guided Farm Visit",
@@ -339,21 +382,31 @@ export const restaurant = {
       label: "Meat Selection",
       items: [
         { name: "Whole Goat", price: "Ksh 20,000" },
-        { name: "Goat Leg", price: "Ksh 4,000" },
-        { name: "Goat Ribs", price: "Ksh 3,500" },
-        { name: "Pork Per KG", price: "Ksh 1,200" },
-        { name: "Kienyeji Chicken", price: "Ksh 2,800" },
-        { name: "Whole Tilapia Fish", price: "Ksh 1,200" },
+        { name: "Pork Per KG", price: "Ksh 1,300" },
+        { name: "Mutton Per KG", price: "Ksh 1,300" },
+        { name: "Kienyeji Chicken", price: "Ksh 1,800" },
+        { name: "Broiler Chicken", price: "Ksh 1,200" },
+        { name: "Tilapia", price: "Ksh 750" },
+      ],
+    },
+    {
+      label: "Platter",
+      items: [
+        {
+          name: "Platter: 1/2 pork, 1/2 beef, 1/2 broiler, 4 sausages and 2 accompaniments of your choice",
+          price: "Ksh 3,000",
+        },
       ],
     },
     {
       label: "Side Dishes",
       items: [
-        { name: "Ugali", price: "Ksh 200" },
-        { name: "Mukimo", price: "Ksh 200" },
-        { name: "Mashed Potatoes", price: "Ksh 200" },
-        { name: "Saute Potatoes", price: "Ksh 300" },
-        { name: "Rice", price: "Ksh 200" },
+        { name: "Ugali", price: "Ksh 100" },
+        { name: "Saute Potatoes", price: "Ksh 250" },
+        { name: "Plain Rice", price: "Ksh 100" },
+        { name: "Pilau", price: "Ksh 200" },
+        { name: "Chapati", price: "Ksh 100" },
+        { name: "Roast Potatoes", price: "Ksh 200" },
       ],
     },
   ],
@@ -361,7 +414,7 @@ export const restaurant = {
 
 export const contact = {
   email: "rawhewranch@gmail.com",
-  phone: "+254712137749",
+  phone: "+254742293741",
   address: "7FH8+82X Kinamba, Naivasha",
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=7FH8%2B82X%20Kinamba%2C%20Naivasha",
